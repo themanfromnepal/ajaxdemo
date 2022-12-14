@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax - Demo </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ajax Demo </h1>
+    <h3>Fetching data (GET) from local Text file, local JSON file, external API (link), and local database(PhPmyAdmin)</h3>
+    
+    <div class="container">
+        <div class="sub-container">
+            <button id="btn-text">Get TEXT File</button>
+            <div class="field" id="field-text"></div>
+        </div>
+        
+        <div class="sub-container">
+            <button id="btn-json">Get JSON File</button>
+            <div class="field" id="field-json"></div>
+        </div>
+        
+        <div class="sub-container">
+            <button id="btn-api">Get API File</button>
+            <div class="field" id="field-api"></div>
+        </div>
+
+        <div class="sub-container">
+            <form  id="postForm">
+                
+                <input type="name" id="db-postname" placeholder="POST the name:">
+                <input type="submit"  value="POST" class="btn-db">
+
+            </form>
+
+            <button id="db-getBtn">GET DB</button>
+
+            <!-- <form  id="getForm">
+                
+                <input type="name" name="search" id="db-getname" placeholder="GET the name:">
+                <input type="submit" name="get" value="SEARCH" class="btn-db">
+
+            </form> -->
+
+            <div class="field" id="field-db"></div>
+            
+        </div>
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
